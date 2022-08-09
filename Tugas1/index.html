@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 1 | Generate Gambar</title>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex justify-center w-full h-screen">
+    <div id="app" class="flex flex-col justify-center items-center">
+        <h1 class="text-[92px]">GatotKaca</h1>
+        <input type="text" id="input" placeholder="Masukkan Gambar" class="w-[100vh] h-[5vh] mt-[45px] border-[1px] rounded-xl p-4 hover:drop-shadow-md hover:border-0 focus:outline-none">
+        <button id="btnGambar" class="w-[18vh] h-[5vh] mt-[50px] border-[1px] rounded-lg p-2">Generate Gambar</button>
+        <img class="w-[750px]" id="output">
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
