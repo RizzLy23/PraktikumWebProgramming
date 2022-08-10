@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trial 3 | Penggunaan API</title>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body class="flex justify-center w-full h-screen bg-sky-600 text-white">
+    <div id="app" class="flex flex-col justify-center items-center gap-y-8">
+        <h1 class="font-bold text-[50px]">Generator Makanan By Rizal</h1>
+        <!--
+            <img class="w-[300px] rounded-full" :src="profileUser" alt="">
+        -->
+        
+        <div class="flex gap-x-8">
+            <button class="w-[180px] h-[40px] border-[1px] rounded-full" @click="generateFood()" type="button">Generate Makanan</button>
+            <button class="w-[180px] h-[40px] border-[1px] rounded-full" @click="generateDrink()" type="button">Generate Minuman</button>  
+        </div>
+
+        <div id="view">
+            <ul v-for="(data, index) in food">
+                {{index+1}} {{data.nama}}
+            </ul>
+        </div>
+
+        <div id="view">
+            <ul v-for="(data, index) in drink">
+                {{index+1}} {{data.nama}}
+            </ul>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
